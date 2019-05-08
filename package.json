@@ -4,6 +4,7 @@
   "description": "S3 backed challenge strategy for greenlock-express.js (and greenlock.js)",
   "main": "index.js",
   "scripts": {
+    "clean": "node ./clean.js",
     "test": "node ./test.js"
   },
   "repository": {
