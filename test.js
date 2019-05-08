@@ -14,7 +14,7 @@ let challenger = require('./index').create({
     , secretAccessKey: secretAccessKey
     , regionName: regionName
     , bucketName: bucketName
-    , directory: ''
+    , directory: 'acme-challenge/'
     , debug: true
 });
 
