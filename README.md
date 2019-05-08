@@ -24,7 +24,7 @@ let challenge = require('greenlock-challenge-s3').create({
     , secretAccessKey: secretAccessKey      // Replace with your secretAccessKey
     , regionName: regionName                // Replace with your regionName
     , bucketName: bucketName                // Replace with your bucketName
-    , directory: ''                         // Recommended
+    , directory: 'acme-challenge/'          // Recommended
     , debug: true                           // Debug
 });
 
