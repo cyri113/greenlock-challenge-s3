@@ -32,7 +32,9 @@ var Greenlock = require("greenlock-express");
 
 var greenlock = Greenlock.create({
     // Other options
-    , challenge: challenge
+    , challenges: {
+        'http-01': challenge
+    }
 });
 
 // Continue your greenlock setup
