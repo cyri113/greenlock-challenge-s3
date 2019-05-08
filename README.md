@@ -41,7 +41,7 @@ var greenlock = Greenlock.create({
 
 ## Testing
 
-The strategy is tested against the greenlock-store-test [https://git.coolaj86.com/coolaj86/greenlock-challenge-test.js]
+The strategy is tested against the [greenlock-store-test](https://git.coolaj86.com/coolaj86/greenlock-challenge-test.js)
 
 To run the tests yourself, create a `.env` file with the following
 
