@@ -13,6 +13,12 @@ const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
 module.exports.create = (createOptions) => {
     const options = Object.assign({}, defaultOptions, createOptions);
 
+    if (!options.debug) {
+        console = console || {};
+        console.log = () => { };
+        console.error = () => { };
+    }
+
     AWS.config.update({
         region: options.bucketRegion
         , credentials: new AWS.Credentials({
