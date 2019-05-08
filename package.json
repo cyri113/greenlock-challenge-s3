@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/cderche/greenlock-challenge-s3#readme",
   "devDependencies": {
-    "dotenv": "^8.0.0"
+    "dotenv": "^8.0.0",
+    "greenlock-challenge-test": "^3.0.2"
   },
   "dependencies": {
     "aws-sdk": "^2.451.0"
