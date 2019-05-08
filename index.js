@@ -5,7 +5,7 @@ const defaultOptions = {
     , secretAccessKey: null
     , bucketName: null
     , bucketRegion: null
-    , directory: ''
+    , directory: 'acme-challenge/'
 }
 
 const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
