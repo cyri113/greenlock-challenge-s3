@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/cderche/greenlock-challenge-s3/issues"
   },
-  "homepage": "https://github.com/cderche/greenlock-challenge-s3#readme"
+  "homepage": "https://github.com/cderche/greenlock-challenge-s3#readme",
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
 }
