@@ -5,7 +5,7 @@ require("dotenv").config();
 let accessKeyId = process.env.AWS_ACCESS_KEY_ID
     , secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY
     , regionName = process.env.AWS_BUCKET_REGION
-    , bucketName = process.env.AWS_BUCKET_NAME
+    , bucketName = process.env.AWS_BUCKET_NAME;
 
 var AWS = require("aws-sdk");
 AWS.config.setPromisesDependency(Promise);
@@ -30,7 +30,7 @@ s3.listObjects({ Bucket: bucketName }).promise().then((data) => {
 
     for (let i = 0; i < data.Contents.length; i++) {
         objectKeys.push({
-            Key: data.Contents[i].Key
+            Key: data.Contents[parseInt(i)].Key
         });
     }
 
