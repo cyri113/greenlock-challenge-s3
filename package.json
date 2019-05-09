@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "node ./clean.js",
     "test": "node ./test.js",
-    "coverage": "nyc --reporter=lcovonly --report-dir=./coverage npm run test",
-    "codacy": "cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage"
+    "coverage": "nyc --reporter=lcovonly --report-dir=./coverage npm run test"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
   },
   "homepage": "https://github.com/cderche/greenlock-challenge-s3#readme",
   "devDependencies": {
-    "codacy-coverage": "^3.4.0",
     "dotenv": "^8.0.0",
     "greenlock-challenge-test": "^3.0.2",
     "nyc": "^14.1.0"
