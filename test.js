@@ -4,7 +4,7 @@ require("dotenv").config();
 
 let accessKeyId = process.env.AWS_ACCESS_KEY_ID
     , secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY
-    , regionName = process.env.AWS_BUCKET_REGION
+    , bucketRegion = process.env.AWS_BUCKET_REGION
     , bucketName = process.env.AWS_BUCKET_NAME;
 
 let tester = require("greenlock-challenge-test");
@@ -12,7 +12,7 @@ let tester = require("greenlock-challenge-test");
 let challenger = require("./index").create({
     accessKeyId
     , secretAccessKey
-    , regionName
+    , bucketRegion
     , bucketName
     , directory: "acme-challenge/"
     , debug: true
